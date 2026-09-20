@@ -6,6 +6,8 @@ spring:
       server:
         git:
           uri: https://github.com/omar2398/rasid-config-repo.git
+          username: ${GITHUB_USERNAME}
+          password: ${GITHUB_TOKEN}
           default-label: master
           clone-on-start: true
           force-pull: true
@@ -17,7 +19,5 @@ management:
         include:
           - health
           - info
-
-
 server:
   port: 8888
