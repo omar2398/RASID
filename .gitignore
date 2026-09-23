@@ -1,3 +1,6 @@
 .env
 *.env
 config-server/.env
+
+#Docker
+docker/volumes

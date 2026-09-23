@@ -1,0 +1,14 @@
+name: Rasid
+
+services:
+  auth-db:
+    container_name: auth-db
+    image: postgres:15-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: auth_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./docker/volumes/auth-db:/var/lib/postgresql/data
