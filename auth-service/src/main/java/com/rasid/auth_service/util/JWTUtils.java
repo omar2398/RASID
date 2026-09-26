@@ -27,11 +27,11 @@ public class JWTUtils {
         this.refreshTokenExpiration = refreshTokenExpiration;
     }
 
-    private Date getAccessTokenExpiration() {
+    public Date getAccessTokenExpiration() {
         return new Date(System.currentTimeMillis() + accessTokenExpiration);
     }
 
-    private Date getRefreshTokenExpiration() {
+    public Date getRefreshTokenExpiration() {
         return new Date(System.currentTimeMillis() + refreshTokenExpiration);
     }
 
@@ -54,6 +54,7 @@ public class JWTUtils {
     public String generateRefreshToken(User user) {
         Map<String, Object> claims = new Hashtable<>();
         claims.put("role", user.getRole());
+        claims.put("type", "REFRESH");
         return Jwts.builder()
                 .signWith(getSecretKey())
                 .expiration(getRefreshTokenExpiration())
@@ -109,6 +110,15 @@ public class JWTUtils {
             return expiration.before(new Date(System.currentTimeMillis()));
         } catch (JwtException e) {
             return true;
+        }
+    }
+    public boolean isRefreshToken(String token) {
+        try {
+            Claims claims = Jwts.parser().verifyWith(getSecretKey()).build().parseSignedClaims(token).getPayload();
+            String refresh = extractClaims(claims, claim -> claim.get("type", String.class));
+            return refresh.equals("REFRESH");
+        } catch (JwtException e) {
+            return false;
         }
     }
 

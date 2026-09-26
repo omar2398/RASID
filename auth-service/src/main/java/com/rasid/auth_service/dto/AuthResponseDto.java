@@ -1,6 +1,8 @@
 package com.rasid.auth_service.dto;
-import java.util.UUID;
+import lombok.Builder;
 
+import java.util.UUID;
+@Builder
 public record AuthResponseDto(
         UUID userId,
         String email,

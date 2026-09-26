@@ -1,7 +1,6 @@
 package com.rasid.auth_service.controller;
 
 import com.rasid.auth_service.dto.*;
-import com.rasid.auth_service.dto.AuthRequestDto;
 import com.rasid.auth_service.service.UserService;
 import jakarta.validation.Valid;
 import lombok.Getter;
@@ -26,11 +25,11 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.register(request));
     }
     @PostMapping("/login")
-    public ResponseEntity<AuthResponseDto> login(@Valid UserRequestDto request){
-        return ResponseEntity.ok(service.login());
+    public ResponseEntity<AuthResponseDto> login(@Valid UserLoginRequestDto request){
+        return ResponseEntity.ok(service.login(request));
     }
     @PostMapping("/refresh-token")
-    public ResponseEntity<AuthResponseDto> refreshToken(@Valid RefreshTokenRequestDto requestDto){
+    public ResponseEntity<RefreshTokenResponseDto> refreshToken(@Valid RefreshTokenRequestDto requestDto){
         return ResponseEntity.ok(service.refreshToken(requestDto));
     }
     @PostMapping("/logout")
