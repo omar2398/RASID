@@ -11,13 +11,14 @@ import com.rasid.auth_service.repository.UserRepository;
 import com.rasid.auth_service.util.JWTUtils;
 import com.rasid.auth_service.util.TokenHasher;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -128,15 +129,26 @@ public class UserService {
     public void changeUserPassword(ChangePasswordRequestDto requestDto) {
         User user = userRepo.findById(getCurrentUserUserId()).orElseThrow(() ->
                 new UserNotFoundException("User not found"));
-        if (requestDto.oldPassword() != null && requestDto.newPassword() != null){
-            if (passwordEncoder.matches(requestDto.oldPassword(), user.getPassword())){
+        if (requestDto.oldPassword() != null && requestDto.newPassword() != null) {
+            if (passwordEncoder.matches(requestDto.oldPassword(), user.getPassword())) {
                 user.setPassword(passwordEncoder.encode(requestDto.newPassword()));
             } else throw new BadCredentialsException("Authentication error");
-        }else throw new BadCredentialsException("Authentication error");
+        } else throw new BadCredentialsException("Authentication error");
 
     }
 
     private UUID getCurrentUserUserId() {
         return UUID.fromString(SecurityContextHolder.getContext().getAuthentication().getName());
+    }
+
+    public List<UserResponseDto> getAllUsers() {
+        return userRepo.findAll().stream().map(mapper::toDto).toList();
+    }
+
+    public UserResponseDto updateUserRole(UUID id, @Valid NewRoleDto dto) {
+        User user = userRepo.findById(id).orElseThrow(() -> new UserNotFoundException("User not found"));
+        user.setRole(dto.newRole());
+        userRepo.save(user);
+        return mapper.toDto(user);
     }
 }
