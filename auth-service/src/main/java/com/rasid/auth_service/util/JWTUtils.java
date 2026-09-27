@@ -42,11 +42,12 @@ public class JWTUtils {
     public String generateAccessToken(User user) {
         Map<String, Object> claims = new Hashtable<>();
         claims.put("role", user.getRole());
+        claims.put("type", "ACCESS");
         return Jwts.builder()
                 .signWith(getSecretKey())
                 .expiration(getAccessTokenExpiration())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .subject(user.getEmail())
+                .subject(user.getId().toString())
                 .setClaims(claims)
                 .compact();
     }
@@ -59,7 +60,7 @@ public class JWTUtils {
                 .signWith(getSecretKey())
                 .expiration(getRefreshTokenExpiration())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .subject(user.getEmail())
+                .subject(user.getId().toString())
                 .setClaims(claims)
                 .compact();
     }
@@ -68,7 +69,7 @@ public class JWTUtils {
         return claimResolver.apply(claims);
     }
 
-    public String extractUsername(String token) {
+    public String extractUserId(String token) {
         return Jwts.parser()
                 .verifyWith(getSecretKey())
                 .build()
@@ -112,6 +113,7 @@ public class JWTUtils {
             return true;
         }
     }
+
     public boolean isRefreshToken(String token) {
         try {
             Claims claims = Jwts.parser().verifyWith(getSecretKey()).build().parseSignedClaims(token).getPayload();
