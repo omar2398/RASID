@@ -144,7 +144,7 @@ public class UserService {
     public List<UserResponseDto> getAllUsers() {
         return userRepo.findAll().stream().map(mapper::toDto).toList();
     }
-
+    @Transactional
     public UserResponseDto updateUserRole(UUID id, @Valid NewRoleDto dto) {
         User user = userRepo.findById(id).orElseThrow(() -> new UserNotFoundException("User not found"));
         user.setRole(dto.newRole());
