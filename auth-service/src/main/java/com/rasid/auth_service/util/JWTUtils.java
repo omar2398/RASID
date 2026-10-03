@@ -12,6 +12,7 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.UUID;
 import java.util.function.Function;
 @Component
 public class JWTUtils {
@@ -45,11 +46,12 @@ public class JWTUtils {
         claims.put("role", user.getRole());
         claims.put("type", "ACCESS");
         return Jwts.builder()
-                .signWith(getSecretKey())
-                .expiration(getAccessTokenExpiration())
-                .issuedAt(new Date(System.currentTimeMillis()))
+                .claims(claims)
+                .id(UUID.randomUUID().toString())
                 .subject(user.getId().toString())
-                .setClaims(claims)
+                .issuedAt(new Date())
+                .expiration(getAccessTokenExpiration())
+                .signWith(getSecretKey())
                 .compact();
     }
 
@@ -58,14 +60,14 @@ public class JWTUtils {
         claims.put("role", user.getRole());
         claims.put("type", "REFRESH");
         return Jwts.builder()
+                .claims(claims)
+                .id(UUID.randomUUID().toString())
                 .signWith(getSecretKey())
                 .expiration(getRefreshTokenExpiration())
-                .issuedAt(new Date(System.currentTimeMillis()))
+                .issuedAt(new Date())
                 .subject(user.getId().toString())
-                .setClaims(claims)
                 .compact();
     }
-
     public <T> T extractClaims(Claims claims, Function<Claims, T> claimResolver){
         return claimResolver.apply(claims);
     }

@@ -41,6 +41,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
             return;
         }
+        System.out.println("The jwt token is: " + jwt);
+        System.out.println("the user UUID is: " + jwtUtils.extractUserId(jwt));
         UserDetails userDetails = service.loadUserById(UUID.fromString(jwtUtils.extractUserId(jwt)));
         if (jwtUtils.isTokenValid(jwt) && !jwtUtils.isTokenExpired(jwt)){
             Authentication authentication = new UsernamePasswordAuthenticationToken(

@@ -46,6 +46,7 @@ public class UserService {
             throw new UserExistsException("User with username: " + request.username() + "or email: " + request.email() + "is already exist");
         }
         User user = mapper.toEntity(request);
+        userRepo.save(user);
         AuthResponseDto response = mapper.toAuthResponse(user);
         RefreshToken refreshToken = mapper.toRefreshTokenEntity(response, user);
         refreshTokenRepository.save(refreshToken);

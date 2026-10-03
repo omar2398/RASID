@@ -12,6 +12,7 @@ import com.rasid.auth_service.util.TokenHasher;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 
 @Component
@@ -63,7 +64,6 @@ public class UserMapper {
                 .tokenHash(tokenHasher.hash(response.refreshToken()))
                 .expiresAt(jwtUtils.getRefreshTokenExpiration().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime())
                 .user(user)
-                .id(user.getId())
                 .build();
     }
 

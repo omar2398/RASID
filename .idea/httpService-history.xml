@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HttpHistory">
+    <option name="httpHistories">
+      <map>
+        <entry key="0">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar viewer&quot;,&#10;  &quot;email&quot;: &quot;viewer@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="0" />
+              <option name="method" value="POST" />
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-09-28 20:09:26" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar123&quot;,&#10;  &quot;email&quot;: &quot;omar@test.com&quot;,&#10;  &quot;password&quot;: &quot;omarSteven2398&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="1" />
+              <option name="method" value="POST" />
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:02:43" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar2398&quot;,&#10;  &quot;email&quot;: &quot;omar@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="2" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;userId&quot;:&quot;87e76c93-bf72-44ab-ba68-18a7a50378e1&quot;,&quot;email&quot;:&quot;omar@rasid.com&quot;,&quot;role&quot;:&quot;VIEWER&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiUkVGUkVTSCIsInJvbGUiOiJWSUVXRVIifQ.1vqw4201LmXxCxZLA4IS9qEUx1YkPmfhS5TB4fT-17dBBGEDrOFu1dW3NiFf4LmI&quot;}" />
+              <option name="time" value="2026-10-03 15:32:58" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="3" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:34:02" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="4" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:34:48" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="5">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="5" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:34:49" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="6">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="6" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:36:07" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="7">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="7" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:37:18" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="8">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiJ9.0N1mIfVAD2FdZpwu9hOXf6yucrMx9FclA3fLx8ED2LUYpMfgqwfOwYHaz2WQMQjw" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="8" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:38:04" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="9">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar2398&quot;,&#10;  &quot;email&quot;: &quot;omar2@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="9" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:44:09" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="10">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar239&quot;,&#10;  &quot;email&quot;: &quot;omar2@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="10" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:44:31" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="11">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar&quot;,&#10;  &quot;email&quot;: &quot;omar2@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="11" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2026-10-03 15:44:53" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="12">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;omar&quot;,&#10;  &quot;email&quot;: &quot;omar2@rasid.com&quot;,&#10;  &quot;password&quot;: &quot;omar1234&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/register" />
+              <option name="id" value="12" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;userId&quot;:&quot;d82693a2-e8d5-47bf-beef-89c3b5da564b&quot;,&quot;email&quot;:&quot;omar2@rasid.com&quot;,&quot;role&quot;:&quot;VIEWER&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiUkVGUkVTSCIsInJvbGUiOiJWSUVXRVIiLCJqdGkiOiJlZmYzNjY4OS01M2YzLTRkYTMtODFjNC0wNGJhNzFiYzAzYWIiLCJleHAiOjE3OTE2MzY4NzksImlhdCI6MTc5MTAzMjA3OSwic3ViIjoiZDgyNjkzYTItZThkNS00N2JmLWJlZWYtODljM2I1ZGE1NjRiIn0.4YfdbxAwwJ9G0U7JhBpSA_fxEN6zH6s_BcQ3yxRhTZ9evOxUQYdUMNiHlmVjI5sy&quot;}" />
+              <option name="time" value="2026-10-03 15:54:40" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="13">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo " />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="13" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-10-03 15:57:01" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="14">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo " />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="14" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-10-03 15:57:21" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="15">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo " />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="15" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-10-03 16:01:49" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="16">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo " />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="16" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-10-03 16:01:56" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="17">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzM4NCJ9.eyJ0eXBlIjoiQUNDRVNTIiwicm9sZSI6IlZJRVdFUiIsImp0aSI6IjIxODAwM2RlLWE2MTItNGJhMS1iY2NjLTczYzJiYTkyOGZjNiIsInN1YiI6ImQ4MjY5M2EyLWU4ZDUtNDdiZi1iZWVmLTg5YzNiNWRhNTY0YiIsImlhdCI6MTc5MTAzMjA3OSwiZXhwIjoxNzkxMDMzODc5fQ.M2zpSvsjs5t-Mjb-2FZEyZz9TW1UjKgg2NJARgtULk7ny8reFihFlB52puwfakdo " />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8010/api/v1/auth/me" />
+              <option name="id" value="17" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-10-03 16:02:19" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

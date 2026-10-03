@@ -45,18 +45,18 @@ public class UserController {
         return ResponseEntity.ok(service.updateUserDetails(request));
     }
     @PutMapping("/change-password")
-    ResponseEntity<String> changeUserPassword(@Valid ChangePasswordRequestDto request){
+    ResponseEntity<String> changeUserPassword(@Valid @RequestBody ChangePasswordRequestDto request){
         service.changeUserPassword(request);
         return ResponseEntity.ok().body("Password was changed successfully");
     }
     @GetMapping("/users")
-    @PreAuthorize("HasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<UserResponseDto>> getAllUser(){
         return ResponseEntity.ok(service.getAllUsers());
     }
     @PutMapping("/users/{id}/role")
-    @PreAuthorize("HasRole('ADMIN')")
-    public ResponseEntity<UserResponseDto> updateUserRole(@PathVariable UUID id, @Valid NewRoleDto dto) {
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<UserResponseDto> updateUserRole(@PathVariable UUID id, @Valid @RequestBody NewRoleDto dto) {
         return ResponseEntity.ok(service.updateUserRole(id, dto));
     }
 
